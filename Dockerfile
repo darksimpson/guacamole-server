@@ -71,7 +71,7 @@ RUN ${PREFIX_DIR}/bin/build-guacd.sh "$BUILD_DIR" "$PREFIX_DIR"
 RUN ${PREFIX_DIR}/bin/list-dependencies.sh    \
         ${PREFIX_DIR}/sbin/guacd              \
         ${PREFIX_DIR}/lib/libguac-client-*.so \
-        ${PREFIX_DIR}/lib/freerdp2/guac*.so   \
+        ${PREFIX_DIR}/lib/freerdp2/libguac*.so   \
         > ${PREFIX_DIR}/DEPENDENCIES
 
 # Use same Debian as the base for the runtime image
